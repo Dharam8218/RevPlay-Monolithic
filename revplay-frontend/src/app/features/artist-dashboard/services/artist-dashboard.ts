@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ArtistDashboardService {
-  private baseUrl = 'http://localhost:8080/revplay';
+  private baseUrl = '/api/revplay';
 
   constructor(private http: HttpClient) {}
 

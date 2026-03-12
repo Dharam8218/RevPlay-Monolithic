@@ -30,7 +30,7 @@ export interface FavoritedUser {
 
 @Injectable({ providedIn: 'root' })
 export class AnalyticsService {
-  private baseUrl = 'http://localhost:8080/revplay/artist/analytics';
+  private baseUrl = '/api/revplay/artist/analytics';
 
   constructor(private http: HttpClient) {}
 

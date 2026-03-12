@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class AlbumService {
-  private baseUrl = 'http://localhost:8080/revplay/albums';
+  private baseUrl = '/api/revplay/albums';
 
   constructor(private http: HttpClient) {}
 

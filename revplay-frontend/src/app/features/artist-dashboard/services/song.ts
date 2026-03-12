@@ -5,7 +5,7 @@ import { SongResponse } from '../../../core/models/song-response';
 
 @Injectable({ providedIn: 'root' })
 export class SongService {
-  private baseUrl = 'http://localhost:8080/revplay/songs';
+  private baseUrl = '/api/revplay/songs';
 
   constructor(private http: HttpClient) {}
 
