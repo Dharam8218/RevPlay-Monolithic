@@ -23,11 +23,11 @@ jobs:
 
       - name: Build with Maven
         working-directory: ./RevPlay
-        run: mvn clean package -DskipTests
+        run: ./mvnw clean package -DskipTests
 
       - name: Run tests
         working-directory: ./RevPlay
-        run: mvn test
+        run: ./mvnw test
 
   build-frontend:
     name: Build Angular
@@ -62,7 +62,7 @@ jobs:
       - name: Build backend image (no push)
         uses: docker/build-push-action@v5
         with:
-          context: ./revplay-backend
+          context: ./RevPlay
           push: false
           tags: revplay-backend:ci
 
