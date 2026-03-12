@@ -15,7 +15,7 @@ export class MusicService {
   private cachedSongs: any[] = [];
   private cachedPage = -1;
 
-  baseUrl = '/api/revplay';
+  baseUrl = '/revplay';
 
   getSongs(page: number, size: number, sortBy: string, direction: string) {
     if (this.cachedSongs.length > 0 && this.cachedPage === page) {
