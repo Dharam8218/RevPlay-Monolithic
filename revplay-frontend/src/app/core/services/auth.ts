@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
-  private baseUrl = '/revplay';
+  private baseUrl = '/api/revplay';
 
   constructor(private http: HttpClient) {}
 

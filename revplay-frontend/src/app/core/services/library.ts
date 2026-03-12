@@ -9,7 +9,7 @@ import { Album } from '../models/album.model';
 })
 export class LibraryService {
 
-  private baseUrl = '/revplay/library';
+  private baseUrl = '/api/revplay/library';
 
   constructor(private http: HttpClient) {}
 
