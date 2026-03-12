@@ -1,0 +1,197 @@
+2026-02-24T09:55:17.780+05:30  INFO 19232 --- [RevPlay] [main] c.revature.RevPlay.RevPlayApplication    : Starting RevPlayApplication using Java 21.0.6 with PID 19232 (C:\Users\dhram\Downloads\RevPlay\target\classes started by dhram in C:\Users\dhram\Downloads\RevPlay)
+2026-02-24T09:55:17.783+05:30 DEBUG 19232 --- [RevPlay] [main] c.revature.RevPlay.RevPlayApplication    : Running with Spring Boot v4.0.2, Spring v7.0.3
+2026-02-24T09:55:17.785+05:30  INFO 19232 --- [RevPlay] [main] c.revature.RevPlay.RevPlayApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-24T09:55:19.300+05:30  INFO 19232 --- [RevPlay] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-24T09:55:19.420+05:30  INFO 19232 --- [RevPlay] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 9 JPA repository interfaces.
+2026-02-24T09:55:20.378+05:30  INFO 19232 --- [RevPlay] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-02-24T09:55:20.405+05:30  INFO 19232 --- [RevPlay] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-24T09:55:20.410+05:30  INFO 19232 --- [RevPlay] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-24T09:55:20.480+05:30  INFO 19232 --- [RevPlay] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2598 ms
+2026-02-24T09:55:20.731+05:30  INFO 19232 --- [RevPlay] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-24T09:55:20.835+05:30  INFO 19232 --- [RevPlay] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-24T09:55:21.448+05:30  INFO 19232 --- [RevPlay] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-24T09:55:21.496+05:30  INFO 19232 --- [RevPlay] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-24T09:55:21.708+05:30  INFO 19232 --- [RevPlay] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77a4bac
+2026-02-24T09:55:21.710+05:30  INFO 19232 --- [RevPlay] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-24T09:55:21.785+05:30  WARN 19232 --- [RevPlay] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-24T09:55:21.810+05:30  INFO 19232 --- [RevPlay] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/revplayfullstack?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: revplayfullstack/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-24T09:55:23.124+05:30  INFO 19232 --- [RevPlay] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-24T09:55:23.236+05:30  INFO 19232 --- [RevPlay] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T09:55:23.321+05:30  INFO 19232 --- [RevPlay] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-24T09:55:24.350+05:30 DEBUG 19232 --- [RevPlay] [main] c.r.R.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-24T09:55:25.768+05:30  INFO 19232 --- [RevPlay] [main] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-24T09:55:25.769+05:30  WARN 19232 --- [RevPlay] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-24T09:55:26.026+05:30  WARN 19232 --- [RevPlay] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-24T09:55:26.454+05:30  INFO 19232 --- [RevPlay] [main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-24T09:55:26.966+05:30  INFO 19232 --- [RevPlay] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-02-24T09:55:26.975+05:30  INFO 19232 --- [RevPlay] [main] c.revature.RevPlay.RevPlayApplication    : Started RevPlayApplication in 9.903 seconds (process running for 10.699)
+2026-02-24T09:56:33.329+05:30  INFO 19232 --- [RevPlay] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-24T09:56:33.330+05:30  INFO 19232 --- [RevPlay] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-24T09:56:33.334+05:30  INFO 19232 --- [RevPlay] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-02-24T09:56:33.558+05:30  INFO 19232 --- [RevPlay] [http-nio-8080-exec-1] c.r.RevPlay.controller.UserController    : registering user
+2026-02-24T09:56:55.005+05:30  INFO 19232 --- [RevPlay] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-24T09:56:55.013+05:30  INFO 19232 --- [RevPlay] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-02-24T09:56:55.021+05:30  INFO 19232 --- [RevPlay] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24T09:56:55.025+05:30  INFO 19232 --- [RevPlay] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-24T09:56:55.039+05:30  INFO 19232 --- [RevPlay] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-24 10:23:37 INFO  c.r.RevPlay.RevPlayApplication - Starting RevPlayApplication using Java 21.0.6 with PID 14532 (C:\Users\dhram\Downloads\RevPlay\target\classes started by dhram in C:\Users\dhram\Downloads\RevPlay)
+2026-02-24 10:23:37 DEBUG c.r.RevPlay.RevPlayApplication - Running with Spring Boot v4.0.2, Spring v7.0.3
+2026-02-24 10:23:37 INFO  c.r.RevPlay.RevPlayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 10:23:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-24 10:23:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 9 JPA repository interfaces.
+2026-02-24 10:23:40 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-24 10:23:40 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 10:23:40 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-24 10:23:40 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2627 ms
+2026-02-24 10:23:40 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-24 10:23:41 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-24 10:23:41 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-24 10:23:41 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-24 10:23:42 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1cab19e2
+2026-02-24 10:23:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-24 10:23:42 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-24 10:23:42 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/revplayfullstack?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: revplayfullstack/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-24 10:23:43 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-24 10:23:43 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24 10:23:43 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-24 10:23:44 DEBUG c.r.R.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-24 10:23:45 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-24 10:23:45 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-24 10:23:46 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-24 10:23:46 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-24 10:23:47 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-24 10:23:47 INFO  c.r.RevPlay.RevPlayApplication - Started RevPlayApplication in 10.219 seconds (process running for 10.982)
+2026-02-24 10:24:29 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-24 10:24:29 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-24 10:24:29 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-02-24 10:24:30 INFO  c.r.R.controller.UserController - stating login
+2026-02-24 10:24:30 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 10:54:56 INFO  c.r.R.controller.LibraryController - browsing songs
+2026-02-24 10:54:57 WARN  o.s.d.w.c.SpringDataJackson3Configuration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-02-24 10:55:02 INFO  c.r.R.controller.LibraryController - browsing songs
+2026-02-24 10:57:07 INFO  c.r.R.controller.UserController - registering user
+2026-02-24 10:57:12 INFO  c.r.R.controller.UserController - stating login
+2026-02-24 10:57:12 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 10:57:26 INFO  c.r.R.controller.UserController - fetching profile
+2026-02-24 10:57:48 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 10:58:02 INFO  c.r.R.controller.LibraryController - browsing songs by genre
+2026-02-24 10:58:10 INFO  c.r.R.controller.ArtistController - fetching all artist
+2026-02-24 10:58:16 INFO  c.r.R.controller.LibraryController - browsing songs by artist
+2026-02-24 10:58:21 INFO  c.r.R.controller.LibraryController - browsing songs by artist
+2026-02-24 10:58:54 INFO  c.r.R.controller.AlbumController - fetching all albums
+2026-02-24 10:59:01 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 10:59:06 INFO  c.r.R.controller.PlaylistController - fetching all playlist by user
+2026-02-24 10:59:31 INFO  c.r.R.controller.PlaylistController - creating playlist
+2026-02-24 10:59:32 INFO  c.r.R.controller.PlaylistController - fetching all playlist by user
+2026-02-24 10:59:38 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 10:59:40 INFO  c.r.R.controller.PlaylistController - fetching all playlist by user
+2026-02-24 10:59:41 INFO  c.r.R.controller.PlaylistController - adding song to playlist
+2026-02-24 10:59:44 INFO  c.r.R.controller.PlaylistController - fetching all playlist by user
+2026-02-24 10:59:45 INFO  c.r.R.controller.PlaylistController - fetching playlist songs
+2026-02-24 10:59:51 INFO  c.r.R.controller.PlaybackController - playing song
+2026-02-24 11:00:14 INFO  c.r.R.controller.PlaybackController - playing song
+2026-02-24 11:00:20 INFO  c.r.R.controller.PlayerController - fetching recent played songs
+2026-02-24 11:00:20 INFO  c.r.R.controller.PlayerController - fetching history
+2026-02-24 11:00:32 INFO  c.r.R.c.UserStatisticsController - fetching users statistics
+2026-02-24 11:04:24 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 3584 ms
+2026-02-24 11:08:20 INFO  c.r.R.controller.UserController - stating login
+2026-02-24 11:08:20 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 11:08:26 INFO  c.r.R.controller.ArtistController - fetching all artist
+2026-02-24 11:08:33 INFO  c.r.R.c.UserStatisticsController - fetching users statistics
+2026-02-24 11:08:37 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 11:08:40 INFO  c.r.R.c.UserStatisticsController - fetching users statistics
+2026-02-24 11:08:43 INFO  c.r.R.controller.PlaylistController - fetching public playlist
+2026-02-24 11:08:46 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 11:08:47 INFO  c.r.R.controller.PlaylistController - fetching all playlist by user
+2026-02-24 11:08:50 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 11:10:37 INFO  c.r.R.controller.UserController - fetching profile
+2026-02-24 11:10:45 INFO  c.r.R.controller.PlaylistController - fetching all playlist by user
+2026-02-24 11:10:46 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 11:10:49 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 11:22:10 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 12:00:17 INFO  c.r.R.controller.UserController - fetching profile
+2026-02-24 12:00:25 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 12:00:26 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 12:00:27 INFO  c.r.R.controller.PlaylistController - fetching all playlist by user
+2026-02-24 12:00:28 INFO  c.r.R.controller.PlayerController - fetching history
+2026-02-24 12:00:28 INFO  c.r.R.controller.PlayerController - fetching recent played songs
+2026-02-24 12:00:31 INFO  c.r.R.controller.PlaylistController - fetching public playlist
+2026-02-24 12:00:33 INFO  c.r.R.c.UserStatisticsController - fetching users statistics
+2026-02-24 12:00:37 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 12:10:59 INFO  c.r.R.c.UserStatisticsController - fetching users statistics
+2026-02-24 12:12:19 INFO  c.r.R.controller.PlaylistController - fetching public playlist
+2026-02-24 12:12:32 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 12:12:35 INFO  c.r.R.controller.FavoriteController - fetching all favorites songs of user
+2026-02-24 12:55:55 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-24 12:55:55 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-24 12:55:55 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24 12:55:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-24 12:55:56 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-02-24 15:47:28 INFO  c.r.RevPlay.RevPlayApplication - Starting RevPlayApplication using Java 21.0.6 with PID 952 (C:\Users\dhram\Downloads\RevPlay\target\classes started by dhram in C:\Users\dhram\Downloads\RevPlay)
+2026-02-24 15:47:28 DEBUG c.r.RevPlay.RevPlayApplication - Running with Spring Boot v4.0.2, Spring v7.0.3
+2026-02-24 15:47:28 INFO  c.r.RevPlay.RevPlayApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-24 15:47:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-24 15:47:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 136 ms. Found 9 JPA repository interfaces.
+2026-02-24 15:47:31 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-24 15:47:31 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-24 15:47:31 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-02-24 15:47:31 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2668 ms
+2026-02-24 15:47:31 INFO  org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-02-24 15:47:31 INFO  org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-02-24 15:47:32 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-24 15:47:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-24 15:47:32 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f428e6e
+2026-02-24 15:47:32 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-24 15:47:32 WARN  org.hibernate.orm.deprecation - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-24 15:47:32 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/revplayfullstack?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: revplayfullstack/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-24 15:47:34 INFO  org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-24 15:47:34 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24 15:47:34 INFO  o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-24 15:47:35 DEBUG c.r.R.s.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2026-02-24 15:47:36 INFO  o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2026-02-24 15:47:36 WARN  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2026-02-24 15:47:37 WARN  o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-24 15:47:37 INFO  o.s.v.b.OptionalValidatorFactoryBean - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-02-24 15:47:38 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-24 15:47:38 INFO  c.r.RevPlay.RevPlayApplication - Started RevPlayApplication in 10.281 seconds (process running for 11.204)
+2026-02-24 15:48:02 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-24 15:48:02 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-02-24 15:48:02 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-24 15:48:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-02-24 15:48:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
