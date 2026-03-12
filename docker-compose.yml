@@ -1,0 +1,39 @@
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: revplay
+      MYSQL_USER: dharam
+      MYSQL_PASSWORD: dharam
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "dharam", "-pdharam"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build: ./RevPlay
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/revplay
+      SPRING_DATASOURCE_USERNAME: dharam
+      SPRING_DATASOURCE_PASSWORD: dharam
+    depends_on:
+      db:
+        condition: service_healthy
+
+  frontend:
+    build: ./revplay-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  mysql_data:
