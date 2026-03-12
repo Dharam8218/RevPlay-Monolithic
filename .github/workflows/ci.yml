@@ -23,11 +23,11 @@ jobs:
 
       - name: Build with Maven
         working-directory: ./RevPlay
-        run: ./mvnw clean package -DskipTests
+        run: mvn clean package -DskipTests
 
       - name: Run tests
         working-directory: ./RevPlay
-        run: ./mvnw test
+        run: mvn test
 
   build-frontend:
     name: Build Angular
