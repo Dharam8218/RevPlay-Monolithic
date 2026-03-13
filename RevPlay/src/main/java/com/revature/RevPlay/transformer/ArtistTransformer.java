@@ -17,6 +17,7 @@ public class ArtistTransformer {
     public static Artist artistRequestToArtist(UserRequest artistRequest, User user) {
         return Artist.builder()
                 .artistName(artistRequest.getUsername())
+                .profilePicture(artistRequest.getProfilePicture())
                 .user(user)
                 .build();
     }

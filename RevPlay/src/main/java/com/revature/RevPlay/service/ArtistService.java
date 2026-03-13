@@ -55,7 +55,7 @@ public class ArtistService {
                     profilePicture,
                     "profile_images"
             );
-            System.out.println(profileUrl);
+            artist.setProfilePicture(profileUrl);
         }
 
         if (bannerImage != null && !bannerImage.isEmpty()) {
