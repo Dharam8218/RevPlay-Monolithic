@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class LibraryService {
-  private baseUrl = 'http://localhost:8080/revplay/library';
+  private baseUrl = 'api/revplay/library';
 
   constructor(private http: HttpClient) {}
 
@@ -29,12 +29,12 @@ export class LibraryService {
 
   // Get all artists
   getAllArtists() {
-    return this.http.get<any[]>(`http://localhost:8080/revplay/artist/get-all`);
+    return this.http.get<any[]>(`api/revplay/artist/get-all`);
   }
 
   // Get all albums
   getAllAlbums() {
-    return this.http.get<any[]>(`http://localhost:8080/revplay/albums/get-all-albums`);
+    return this.http.get<any[]>(`api/revplay/albums/get-all-albums`);
   }
 }
 

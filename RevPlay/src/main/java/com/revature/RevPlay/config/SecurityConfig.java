@@ -92,7 +92,7 @@ public class SecurityConfig {
     public CorsConfigurationSource corsConfigurationSource() {
 
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:4200", "http://localhost", "http://65.0.19.250"));
+        configuration.setAllowedOrigins(List.of("http://localhost:4200", "http://localhost", "http://65.0.19.250", "https://revplay.in", "https://www.revplay.in", "http://revplay.in", "http://www.revplay.in"));
         configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);

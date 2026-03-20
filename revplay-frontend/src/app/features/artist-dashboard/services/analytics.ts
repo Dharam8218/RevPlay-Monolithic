@@ -44,13 +44,13 @@ export class AnalyticsService {
 
   getTopListeners(page: number = 0, size: number = 5) {
     return this.http.get<TopListenerPage>(
-      `http://localhost:8080/revplay/artist/top-listeners?page=${page}&size=${size}`,
+      `api/revplay/artist/top-listeners?page=${page}&size=${size}`,
     );
   }
 
   getFavoritedUsers(songId: number) {
     return this.http.get<FavoritedUser[]>(
-      `http://localhost:8080/revplay/artist/songs/${songId}/favorited-users`,
+      `api/revplay/artist/songs/${songId}/favorited-users`,
     );
   }
 }
