@@ -60,8 +60,8 @@ public class SecurityConfig {
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/revplay/register/**").permitAll()
-                        .requestMatchers("/revplay/login/**").permitAll()
+                        .requestMatchers("/revplay/login**").permitAll()
+                        .requestMatchers("/revplay/register**").permitAll()
                         .requestMatchers("/revplay/user/**").hasRole("USER")
                         .requestMatchers("/revplay/favorites/**").hasRole("USER")
                         .requestMatchers("/revplay/songs/upload").hasRole("ARTIST")

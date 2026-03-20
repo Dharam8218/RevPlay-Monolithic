@@ -35,11 +35,22 @@ export class AuthService {
   }
 
   logout() {
-    localStorage.clear();
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    localStorage.removeItem('email');
+    localStorage.removeItem('roles');
   }
 
   isLoggedIn(): boolean {
-    return !!this.getToken();
+    const token = this.getToken();
+    if (!token) return false;
+
+    try {
+      const payload = JSON.parse(atob(token.split('.')[1]));
+      return payload.exp * 1000 > Date.now();
+    } catch {
+      return false;
+    }
   }
 
   registerUser(formData: FormData, role: string) {
@@ -59,7 +70,7 @@ export class AuthService {
   getArtistProfile(): Observable<any> {
     return this.http.get<any>(`${this.baseUrl}/artist/profile`);
   }
-  
+
   updateArtistProfile(formData: FormData): Observable<any> {
     return this.http.put(`${this.baseUrl}/artist/profile`, formData);
   }
